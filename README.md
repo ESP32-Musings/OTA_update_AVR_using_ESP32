@@ -30,7 +30,6 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [About the Project](#about-the-project)
 - [Getting Started](#getting-started)
   - [Hardware Required](#hardware-required)
@@ -50,7 +49,7 @@ Testing was done with ESP32-DevKitC v4 board and Arduino UNO, Leonardo and MEGA.
 
 ### Code
 
-`/esp_stm_flash` -> Basic flashing utility, requires path of the .bin file, already uploaded in SPIFFS
+`/esp_avr_flash` -> Basic flashing utility, requires path of the .bin file, already uploaded in SPIFFS
 
 `/file_serving_avr` -> OTA demo, with HTTP File Server with embedded flash link
 
