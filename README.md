@@ -48,6 +48,14 @@ The project aims at enabling firmware update of AVR-powered boards Over-the-Air 
 
 Testing was done with ESP32-DevKitC v4 board and Arduino UNO, Leonardo and MEGA. You can try with any other AVR-powered board and let me know how it worked out.
 
+### Code
+
+`/esp_stm_flash` -> Basic flashing utility, requires path of the .bin file, already uploaded in SPIFFS
+
+`/file_serving_avr` -> OTA demo, with HTTP File Server with embedded flash link
+
+`references` -> Python scripts for understanding the flashing protocol commands and verification
+
 ## Getting Started
 
 ### Hardware Required
