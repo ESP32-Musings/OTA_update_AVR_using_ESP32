@@ -1,0 +1,13 @@
+/esp_avr_flash/build/*
+/file_serving_avr/build/*
+
+
+/esp_avr_flash/sdkconfig
+/file_serving_avr/sdkconfig
+
+
+/esp_avr_flash/sdkconfig.defaults
+/file_serving_avr/sdkconfig.defaults
+
+/esp_avr_flash/sdkconfig.old
+/file_serving_avr/sdkconfig.old

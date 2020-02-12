@@ -1,0 +1,36 @@
+:100000000C9434000C9446000C9446000C9446006A
+:100010000C9446000C9446000C9446000C94460048
+:100020000C9446000C9446000C9446000C94460038
+:0C 01B0 00 F1 F3 0E 94 00 00 FB CF F8 94 FF CF 99
+:00 0000 01 FF
+
+
+:10 0000 00 0C 94 34 00 0C 94 46 00 0C 94 46 00 0C 94 46 00 6A
+: => Record start
+10 => Data length (16 bytes for most records)
+0000 => Start Address
+00 => Record Type (00 =Data Record)
+0C 94 34 00 0C 94 46 00 0C 94 46 00 0C 94 46 00 => Data
+6A => Checksum
+
+:0C 01B0 00 F1 F3 0E 94 00 00 FB CF F8 94 FF CF 99
+: => Record start
+0C => Data length (12 bytes)
+01B0 => Start Address
+00 => Record Type (00 =Data Record)
+F1 F3 0E 94 00 00 FB CF F8 94 FF CF => Data
+99 => Checksum
+
+:00 0000 01 FF
+: => Record start
+00 => Data length (0 bytes: Ending field)
+0000 => Start Address
+01 => Record Type (01 = Ending Record)
+FF => Checksum
+
+Checksum, two hex digits - the least significant bytes of the 2's complement sum of the values of all fields except fields 1 and 6 (Start code ":" byte and two hex digits of the checksum). 
+If the checksum is correctly calculated, adding all the bytes (the Byte count, both bytes in Address, the Record type, each Data byte and the Checksum) together will always result in a value wherein the least significant byte is zero (0x00).
+
+For example, on :0C 01B0 00 F1 F3 0E 94 00 00 FB CF F8 94 FF CF 99
+
+0C + 01 + B0 + 00 + F1 + F3 + 0E + 94 + 00 + 00 + FB + CF + F8 + 94 + FF + CF = 8-67, 2's complement is 99
