@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/laukik-hase/OTA_update_AVR_using_ESP32">
-    <img src="images/logo.png" alt="Logo" width="133" height="125">
+    <img src="images/logo.png" alt="Logo" width="160" height="160">
   </a>
 
   <h3 align="center">OTA for AVR MCU using ESP32</h3>
@@ -31,13 +31,14 @@
 ## Table of Contents
 
 - [About the Project](#about-the-project)
+  - [Code](#code)
 - [Getting Started](#getting-started)
   - [Hardware Required](#hardware-required)
   - [Prerequisites](#prerequisites)
   - [Setting Up](#setting-up)
 - [Usage](#usage)
 - [Troubleshooting](#troubleshooting)
-- [Contributers](#contributers)
+- [Contributors](#contributors)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
@@ -49,11 +50,12 @@ Testing was done with ESP32-DevKitC v4 board and Arduino UNO, Leonardo and MEGA.
 
 ### Code
 
-`/esp_avr_flash` -> Basic flashing utility, requires path of the .bin file, already uploaded in SPIFFS
+`/esp_avr_flash` -> Basic flashing utility, requires path of the .bin file which has been already uploaded in SPIFFS
 
 `/file_serving_avr` -> OTA demo, with HTTP File Server with embedded flash link
 
-`references` -> Python scripts for understanding the flashing protocol commands and verification
+`/references` -> Python scripts for understanding the flashing protocol commands and verification
+
 
 ## Getting Started
 
@@ -126,7 +128,8 @@ To run the OTA demo, you need an ESP32 dev board (e.g. ESP32-WROVER Kit) or ESP3
 * Check your AVR MCU code, which generated the .hex file, for any 'logical' errors.
 * For any other bugs or errors, you can always raise [issues](https://github.com/laukik-hase/OTA_update_AVR_using_ESP32/issues).
 
-## Contributers
+
+## Contributors
 
 * [**laukik-hase**](https://github.com/laukik-hase)
 
@@ -143,6 +146,8 @@ To run the OTA demo, you need an ESP32 dev board (e.g. ESP32-WROVER Kit) or ESP3
 * STK500 Protocol: [Documentation](http://www.amelek.gda.pl/avr/uisp/doc2525.pdf)
 
 * [Arduino StackExchange](https://arduino.stackexchange.com/questions/61796/is-it-possible-to-upload-an-arduino-sketch-through-the-serial-port-rx-instead) answer by [Peter](https://arduino.stackexchange.com/users/39978/peter)
+
+* [README Template](https://github.com/roshanlam/ReadMeTemplate) by [roshanlam](https://github.com/roshanlam)
 
 ## License
 
